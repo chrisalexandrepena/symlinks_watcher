@@ -4,12 +4,12 @@ After=network.target
 
 [Service]
 Type=simple
-User=nobody
+User=ubuntu
 Restart=on-failure
 RestartSec=5s
-Environment=CONFIG_PATH="/path/to/config.json"
-ExecStart=/path/to/bin/watch_folder
-ExecReload=/path/to/bin/watch_folder
+Environment=CONFIG_PATH="/home/ubuntu/dev/symlinks_watcher/config.json"
+ExecStart=/home/ubuntu/.nvm/versions/node/v16.13.0/bin/node /home/ubuntu/dev/symlinks_watcher/watch_folder
+ExecReload=/home/ubuntu/.nvm/versions/node/v16.13.0/bin/node /home/ubuntu/dev/symlinks_watcher/watch_folder
 LimitNOFILE=1048576
 
 [Install]
