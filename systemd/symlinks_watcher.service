@@ -1,0 +1,16 @@
+[Unit]
+Description=Creates symlinks from source folders to destination folders and updates them
+After=network.target
+
+[Service]
+Type=simple
+User=nobody
+Restart=on-failure
+RestartSec=5s
+Environment=CONFIG_PATH="/path/to/config.json"
+ExecStart=/path/to/bin/watch_folder
+ExecReload=/path/to/bin/watch_folder
+LimitNOFILE=1048576
+
+[Install]
+WantedBy=multi-user.target

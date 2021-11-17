@@ -1,0 +1,10 @@
+[
+    {
+        "sourceFolder": "/abs/path/to/source1",
+        "destinationFolder": "/abs/path/to/dest1"
+    },
+    {
+        "sourceFolder": "/abs/path/to/source2",
+        "destinationFolder": "/abs/path/to/dest1"
+    }
+]
