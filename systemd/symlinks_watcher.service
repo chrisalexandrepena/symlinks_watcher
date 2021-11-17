@@ -4,7 +4,7 @@ After=network.target
 
 [Service]
 Type=simple
-User=nobody
+User=ubuntu
 Restart=on-failure
 RestartSec=5s
 Environment=CONFIG_PATH="/path/to/config.json"
