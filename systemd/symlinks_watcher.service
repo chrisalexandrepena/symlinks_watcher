@@ -8,8 +8,8 @@ User=nobody
 Restart=on-failure
 RestartSec=5s
 Environment=CONFIG_PATH="/path/to/config.json"
-ExecStart=/path/to/bin/watch_folder
-ExecReload=/path/to/bin/watch_folder
+ExecStart=/path/to/node/bin /path/to/bin/watch_folders
+ExecReload=/path/to/node/bin  /path/to/bin/watch_folders
 LimitNOFILE=1048576
 
 [Install]
