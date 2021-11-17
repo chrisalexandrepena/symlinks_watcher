@@ -7,7 +7,7 @@ Type=simple
 User=ubuntu
 Restart=on-failure
 RestartSec=5s
-Environment=CONFIG_PATH="/path/to/config.json"
+Environment=CONFIG_PATH="/path/to/conf.json"
 ExecStart=/path/to/node/bin /path/to/bin/watch_folders
 ExecReload=/path/to/node/bin  /path/to/bin/watch_folders
 LimitNOFILE=1048576
